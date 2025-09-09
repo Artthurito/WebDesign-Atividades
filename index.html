@@ -3,6 +3,7 @@
 <head>
     <title>Faculdade Exemplo</title>
     <meta charset="UTF-8">
+    <meta name="faculdade" content="Conteúdos da instituição de ensino superior">
     <style>
         body {
             margin: 0;
@@ -49,17 +50,19 @@
 </head>
 <body>
 
-<header>
+<header id="head">
     <h1>Faculdade Exemplo</h1>
     <p>Transformando conhecimento em futuro</p>
     <!-- Comentário 1 (SEO): Ausência de meta description prejudica a indexação e o CTR nos buscadores -->
 </header>
 
 <nav>
-    <a href="index.html">Início</a>
-    <a href="cursos.html">Cursos</a>
-    <a href="sobre.html">Sobre</a>
-    <a href="contato.html">Contato</a>
+    <ol>
+    <a href="#head">Início</a>
+    <a href="#cursos">Cursos</a>
+    <a href="#sobre">Sobre</a>
+    <a href="#contato">Contato</a>
+    </ol>
     <!-- Comentário 2 (SEO): Links usam âncoras genéricas; textos âncora otimizados ajudam no ranqueamento -->
 </nav>
 
@@ -68,14 +71,14 @@
 </div>
 
 <main>
-    <section>
+    <section id="sobre">
         <h2>Quem Somos</h2>
         <p>A Faculdade Exemplo é uma instituição fictícia dedicada à formação de profissionais preparados para os desafios do mercado.</p>
         <p>Nossa missão é oferecer educação de qualidade e transformar a vida de nossos alunos.</p>
         <!-- Comentário 3 (SEO): Conteúdo não possui palavras-chave estratégicas relacionadas a "faculdade" e "ensino superior" -->
     </section>
 
-    <section>
+    <section id="cursos">
         <h2>Nossos Cursos</h2>
         <ul>
             <li>Administração</li>
@@ -128,7 +131,7 @@
         <!-- Comentário 8 (SEO): Depoimentos não possuem dados estruturados (review schema) para melhorar destaque no Google -->
     </section>
 
-    <section>
+    <section id="contato">
         <h2>Fale Conosco</h2>
         <form>
             <label>Nome:</label><br>
