@@ -1,6 +1,6 @@
 # Atividade de Otimização SEO - Landing Page Institucional
 Descrição do Projeto
-Otimização de uma landing page de uma instituição de ensino, como parte da atividade acadêmica da disciplina de SEO. O ponto de partida foi um repositório base fornecido pelo professor Deivison Takatu, contendo um arquivo HTML com 10 comentários que apontavam pontos críticos para melhoria de SEO.
+Otimização de uma landing page de uma instituição de ensino, como parte da atividade acadêmica da disciplina de Web Design. O ponto de partida foi um repositório base fornecido pelo professor Deivison Takatu, contendo um arquivo HTML com 10 comentários que apontavam pontos críticos para melhoria de SEO.
 
 O objetivo principal foi aplicar as correções sugeridas e, adicionalmente, implementar melhorias na interface e no design da página, resultando em um site mais rápido, acessível e otimizado para os mecanismos de busca.
 
