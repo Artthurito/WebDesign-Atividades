@@ -4,7 +4,7 @@ Otimização de uma landing page de uma instituição de ensino, como parte da a
 
 O objetivo principal foi aplicar as correções sugeridas e, adicionalmente, implementar melhorias na interface e no design da página, resultando em um site mais rápido, acessível e otimizado para os mecanismos de busca.
 
-📋 Índice
+## Índice
 Sobre o Projeto
 
 Tarefas Realizadas
@@ -13,7 +13,7 @@ Tecnologias Utilizadas
 
 Autor
 
-📌 Sobre o Projeto
+## Sobre o Projeto
 A atividade foi dividida nas seguintes etapas principais:
 
 Diagnóstico e Correção: Análise dos 10 comentários de SEO no código-fonte e aplicação das respectivas otimizações.
@@ -24,7 +24,7 @@ Análise de Performance: Verificação da página otimizada em ferramentas de an
 
 Documentação: Comentários no código-fonte e criação deste README.md para documentar todo o processo e as melhorias implementadas para a entrega na plataforma CANVAS.
 
-✅ Tarefas Realizadas
+## Tarefas Realizadas
 1. Correção dos 10 Pontos de SEO
 Todos os 10 comentários no código original foram abordados e solucionados:
 
@@ -63,14 +63,14 @@ A página final foi analisada utilizando ferramentas como o Google Lighthouse e 
 4. Documentação do Código
 O código HTML final foi comentado extensivamente, explicando as seções e as principais otimizações de SEO aplicadas, conforme solicitado no item 5 da atividade.
 
-🛠️ Tecnologias Utilizadas
+## Tecnologias Utilizadas
 HTML5: Para a estruturação semântica do conteúdo.
 
 CSS3: Para a estilização e melhoria do design da página.
 
 Schema.org (Microdata): Para a implementação de dados estruturados.
 
-👨‍💻 Autor
+## Autor
 Arthur
 
 Curso: Engenharia da Computação
