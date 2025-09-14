@@ -19,11 +19,14 @@
         header {
             background: #004080;
             color: white;
+            text-align: center;
+            font-size: large;
         }
         nav {
             background: #0066cc;
         }
         nav ul {
+            text-align: center;
             list-style: none;
             padding: 0;
             margin: 0;
@@ -45,6 +48,13 @@
         #cursos li {
             margin-bottom: 10px;
         }
+        #cursos a {
+            color: inherit;
+            text-decoration: none;
+        }
+        #cursos a:hover {
+            text-decoration: underline; 
+        }
         #img-infraestrutura {
             width: 750px;
         }
@@ -60,6 +70,12 @@
             justify-content: center;
             align-items: flex-start;
             padding-top: 118px;
+        }
+        #depoimentos {
+            text-align: center;
+        }
+        #contato{
+            text-align: center;
         }
         section {
             margin: 20px 0;
@@ -158,7 +174,7 @@
         </article>
     </section>
 
-    <section>
+    <section id="depoimentos">
         <h2>Depoimentos</h2>
         <blockquote itemprop="review" itemscope itemtype="https://schema.org/Review">
             <div itemprop="itemReviewed" itemscope itemtype="https://schema.org/Organization">
