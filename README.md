@@ -23,7 +23,7 @@ Melhoria de UI/Design: Inclusão de elementos visuais e de interface para tornar
 Análise de Performance: Verificação da página otimizada em ferramentas de análise de performance e SEO.
 
 ## ✅ Tarefas Realizadas
-1. Correção dos 10 Pontos de SEO
+#### Correção dos 10 Pontos de SEO
 Todos os 10 comentários no código original foram abordados e solucionados:
 
 [x] Comentário 1: Adição da meta tag description para melhorar a indexação e o CTR nos buscadores.
