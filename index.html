@@ -24,7 +24,6 @@
             align-items: center;
             gap: 20px;
         }
-
         #logo {
             height: 130px;
             width: auto;
@@ -128,17 +127,90 @@
             color: white;
         }
         .infra-galeria {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 15px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
             justify-content: center;
         }
+        .infra-card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .infra-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+        }
         .img-infraestrutura {
-            flex: 1 1 48%;
-            max-width: 48%;
-            height: auto;
-            border-radius: 8px;
-            object-fit: cover;
+            width: 100%; /* A imagem ocupa toda a largura do card */
+            height: 200px; /* Altura fixa para todas as imagens ficarem alinhadas */
+            object-fit: cover; /* Evita que a imagem seja distorcida */
+            display: block;
+        }
+        .card-content {
+            padding: 20px; 
+        }
+        .card-content h4 {
+            margin-top: 0;
+            margin-bottom: 10px;
+            font-size: 1.1em;
+            color: #004080;
+        }
+        .card-content p {
+            margin: 0;
+            font-size: 0.9em;
+            color: #555;
+            line-height: 1.5;
+        }
+        .noticias-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+        .noticia-card {
+            background-color: #f9f9f9;
+            border: 1px solid #eee;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            transition: box-shadow 0.3s ease;
+        }
+        .noticia-card:hover {
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        }
+        .noticia-content {
+            padding: 20px;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        .noticia-content h3 {
+            margin-top: 0;
+            margin-bottom: 10px;
+            font-size: 1.1em;
+            color: #004080;
+        }
+        .noticia-content p {
+            font-size: 0.9em;
+            color: #555;
+            line-height: 1.5;
+            flex-grow: 1;
+        }
+        .noticia-link {
+            background-color: #0066cc;
+            color: white;
+            padding: 8px 12px;
+            border-radius: 5px;
+            text-decoration: none;
+            text-align: center;
+            margin-top: 15px;
+            transition: background-color 0.3s ease;
+        }
+        .noticia-link:hover {
+            background-color: #0052a3;
         }
 
     </style>
@@ -170,58 +242,103 @@
 <main>
     <section id="sobre">
         <h2>Quem Somos</h2>
-        <p>A Facens é uma instituição de ensino superior dedicada à formação de profissionais preparados para os desafios do mercado.</p>
-        <p>Nossa missão como faculdade, é oferecer educação de qualidade e transformar a vida de nossos alunos.</p>
+        <p>Com mais de 45 anos de tradição, a Facens se consolidou como uma referência em ensino superior no Brasil, um compromisso reconhecido com a nota máxima (Conceito 5) na avaliação do Ministério da Educação (MEC). Nosso campus, um verdadeiro Smart Campus, foi projetado para ser uma cidade inteligente, onde a sustentabilidade e a tecnologia caminham juntas para proporcionar a melhor experiência aos nossos alunos.</p>
+        <p>Acreditamos no poder do "aprender fazendo". Por isso, oferecemos uma infraestrutura de ponta com mais de 90 laboratórios modernos, incluindo o Fab Lab e o LIGA (Laboratório de Inovação), onde os estudantes desenvolvem projetos reais e transformam ideias em soluções inovadoras. Nosso corpo docente, formado por mestres e doutores, guia os alunos em uma jornada de conhecimento que vai além da sala de aula, preparando-os para se destacarem no mercado de trabalho nacional e internacional.</p>
     </section>
 
     <section id="cursos">
         <h2>Nossos Cursos</h2>
         <ul>
-            <li><a href="/cursos/administracao" title="Saiba mais sobre o curso de Administração">Administração</a></li>
-            <li><a href="/cursos/ciencia-da-computacao" title="Saiba mais sobre o curso de Ciência da Computação">Ciência da Computação</a></li>
-            <li><a href="/cursos/direito" title="Saiba mais sobre o curso de Direito">Direito</a></li>
-            <li><a href="/cursos/engenharia-civil" title="Saiba mais sobre o curso de Engenharia Civil">Engenharia Civil</a></li>
-            <li><a href="/cursos/medicina" title="Saiba mais sobre o curso de Medicina">Medicina</a></li>
+            <li><a href="/cursos/Arquitetura" title="Saiba mais sobre o curso de Arquitetura">Arquitetura</a></li>
+            <li><a href="/cursos/Engenharias" title="Saiba mais sobre os cursos de Engenharia">Engenharias</a></li>
+            <li><a href="/cursos/Medicina" title="Saiba mais sobre o curso de Medicina">Medicina</a></li>
+            <li><a href="/cursos/Saúde" title="Saiba mais sobre o curso de Saúde">Saúde</a></li>
+            <li><a href="/cursos/TI" title="Saiba mais sobre o curso de TI">Tecnologia da Informação</a></li>
+            <li><a href="/cursos/Outros" title="Saiba mais sobre outros cursos">Outros</a></li>
         </ul>
         </section>
         
     <section>
-        <h2>Infraestrutura</h2>
+        <h2>Infraestrutura de Ponta</h2>
         <div class="infra-galeria">
-            <img class="img-infraestrutura" src="https://www.jornalcruzeiro.com.br/_midias/jpg/2022/12/01/cit_facens-1040801.jpg" alt="Espaço de inovação CIT Facens com estudantes trabalhando em computadores.">
-            <img class="img-infraestrutura" src="https://www.jornalcruzeiro.com.br/_midias/jpg/2022/12/01/smart_lab-1040922.jpg" alt="Laboratório Smart Lab da Facens com alunos em mesas colaborativas e puffs coloridos.">
-            <img class="img-infraestrutura" src="https://agendasorocaba.com.br/wp-content/uploads/2022/11/facens-materia-site.jpg" alt="Espaço Fab Lab Ipea Facens com estudantes e equipamentos.">
-            <img class="img-infraestrutura" src="https://www.jornalcruzeiro.com.br/_midias/jpg/2022/12/01/laboratorio_morfologico-1040878.jpg" alt="Laboratório de saúde com modelos anatômicos em bancadas verdes.">
-        </div>
+            
+            <div class="infra-card">
+                <img class="img-infraestrutura" src="https://www.jornalcruzeiro.com.br/_midias/jpg/2022/12/01/cit_facens-1040801.jpg" alt="Espaço de inovação CIT Facens com estudantes trabalhando em computadores.">
+                <div class="card-content">
+                    <h4>CIT (Centro de Inovação)</h4>
+                    <p>Um ambiente que fomenta a criatividade e o desenvolvimento de projetos inovadores, conectando alunos e empresas.</p>
+                </div>
+            </div>
 
-        <p>Nosso campus conta com biblioteca, laboratórios modernos e áreas de convivência.</p>
-        <p>Estamos sempre investindo em tecnologia e inovação.</p>
+            <div class="infra-card">
+                <img class="img-infraestrutura" src="https://www.jornalcruzeiro.com.br/_midias/jpg/2022/12/01/smart_lab-1040922.jpg" alt="Laboratório Smart Lab da Facens com alunos em mesas colaborativas e puffs coloridos.">
+                <div class="card-content">
+                    <h4>Smart Lab</h4>
+                    <p>Laboratório de ponta com equipamentos modernos para aulas práticas, pesquisas e desenvolvimento de soluções tecnológicas.</p>
+                </div>
+            </div>
+
+            <div class="infra-card">
+                <img class="img-infraestrutura" src="https://agendasorocaba.com.br/wp-content/uploads/2022/11/facens-materia-site.jpg" alt="Espaço Fab Lab Ipea Facens com estudantes e equipamentos.">
+                <div class="card-content">
+                    <h4>Fab Lab (Laboratório de Fabricação)</h4>
+                    <p>Oferece acesso a ferramentas de fabricação digital, permitindo que os alunos transformem suas ideias em protótipos reais.</p>
+                </div>
+            </div>
+
+            <div class="infra-card">
+                <img class="img-infraestrutura" src="https://www.jornalcruzeiro.com.br/_midias/jpg/2022/12/01/laboratorio_morfologico-1040878.jpg" alt="Laboratório de saúde com modelos anatômicos em bancadas verdes.">
+                <div class="card-content">
+                    <h4>Laboratórios de Saúde</h4>
+                    <p>Espaços equipados para a formação de excelência dos futuros profissionais da área da saúde, com simulação de cenários reais.</p>
+                </div>
+            </div>
+
+        </div>
     </section>
 
     <section>
-        <h2>Corpo Docente</h2>
-        <p>Contamos com professores muito bem qualificados, mestres e doutores em suas áreas, com vasta experiência em pesquisa e desenvolvimento, inovação tecnológica e práticas de mercado.</p>
-        <p>Nosso corpo docente é composto por especialistas em diversas áreas do ensino superior, incluindo engenharia, tecnologia, gestão, saúde e ciências humanas e exatas, garantindo uma formação completa e atualizada aos nossos alunos.</p>
+        <h2>Corpo Docente de Excelência</h2>
+        <p>
+            Nosso maior diferencial está na qualidade de nosso corpo docente. Contamos com <strong>professores mestres e doutores</strong>, especialistas renomados em suas áreas, que aliam uma sólida formação acadêmica com uma vasta <strong>experiência prática no mercado</strong>. Essa combinação garante uma formação completa e atualizada aos nossos alunos.
+        </p>
+        <p>
+            Mais do que transmissores de conhecimento, nossos professores atuam como <strong>mentores</strong>, engajados em projetos de pesquisa, desenvolvimento e inovação. Eles guiam os estudantes na jornada para se tornarem profissionais qualificados e cidadãos preparados para os desafios do futuro, conectando a teoria com a realidade e as demandas do mercado de trabalho.
+        </p>
     </section>
 
     <section>
         <h2>Notícias Recentes</h2>
-        <article itemscope itemtype="https://schema.org/NewsArticle">
-            <h3 itemprop="headline">Semana Acadêmica 2025</h3>
-            <p itemprop="description">A Facens realizou sua tradicional Semana Acadêmica com palestras e workshops.</p>
-            <meta itemprop="datePublished" content="2025-09-14">
-            <div itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
-                <meta itemprop="name" content="Facens">
-            </div>
-        </article>
-        <article itemscope itemtype="https://schema.org/NewsArticle">
-            <h3 itemprop="headline">Parceria Internacional</h3>
-            <p itemprop="description">Firmamos acordo com universidades estrangeiras para intercâmbio de alunos.</p>
-            <meta itemprop="datePublished" content="2025-09-10">
-            <div itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
-                <meta itemprop="name" content="Facens">
-            </div>
-        </article>
+        <div class="noticias-container">
+
+            <article class="noticia-card" itemscope itemtype="https://schema.org/NewsArticle">
+                <div class="noticia-content">
+                    <h3 itemprop="headline">Facens no Startup Summit 2025</h3>
+                    <p itemprop="description">O Centro de Empreendedorismo da Facens (FACE) marcou presença no maior evento de inovação do país, compartilhando aprendizados e tendências.</p>
+                    <a href="https://blog.facens.br/" target="_blank" class="noticia-link">Leia mais</a>
+                    <meta itemprop="datePublished" content="2025-09-15">
+                </div>
+            </article>
+
+            <article class="noticia-card" itemscope itemtype="https://schema.org/NewsArticle">
+                <div class="noticia-content">
+                    <h3 itemprop="headline">Reconhecimento no Prêmio Brasil Digital</h3>
+                    <p itemprop="description">A Facens foi reconhecida como Referência Nacional na 21ª edição do Prêmio Brasil Digital Ozires Silva, um dos mais importantes do setor.</p>
+                    <a href="https://blog.facens.br/" target="_blank" class="noticia-link">Leia mais</a>
+                    <meta itemprop="datePublished" content="2025-09-15">
+                </div>
+            </article>
+
+            <article class="noticia-card" itemscope itemtype="https://schema.org/NewsArticle">
+                <div class="noticia-content">
+                    <h3 itemprop="headline">Projeto Florestas Inteligentes 2025</h3>
+                    <p itemprop="description">A implementação do projeto trouxe resultados concretos e inspiradores para comunidades na Mata Atlântica e Amazônia, unindo tecnologia e sustentabilidade.</p>
+                    <a href="https://blog.facens.br/" target="_blank" class="noticia-link">Leia mais</a>
+                    <meta itemprop="datePublished" content="2025-09-15">
+                </div>
+            </article>
+
+        </div>
     </section>
 
     <section id="depoimentos">
